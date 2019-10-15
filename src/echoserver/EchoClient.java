@@ -30,6 +30,7 @@ public class EchoClient {
 			output.write(read);
 			output.flush();
 			System.out.write(input.read());
+			System.out.flush();
 	
       			}
 
