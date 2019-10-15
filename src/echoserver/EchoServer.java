@@ -20,7 +20,9 @@ public class EchoServer {
                                 OutputStream output = client.getOutputStream();
 				while((read = input.read()) != -1){
                                      output.write(read);
+				     output.flush();
 				}
+				
 
 		
 				client.close();
